@@ -1,4 +1,5 @@
-from gui.start import Application
+from src.gui.start import Application
+from src.win.apps import WinApp
 
 
 if __name__ == "__main__":
@@ -7,3 +8,5 @@ if __name__ == "__main__":
     )
     app.position_center()
     app.mainloop()
+
+    # WinApp.selectApp('chrome')
