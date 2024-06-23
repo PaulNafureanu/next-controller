@@ -1,10 +1,13 @@
 import pyautogui
-from utils import AutoguiUtils
+from src.utils import AutoguiUtils
 
 
 def sec():
     pyautogui.sleep(1)
-    pyautogui.hotkey("alt", "c")
+    # pyautogui.hotkey("alt", "c")
+    pyautogui.press("insert")
+    
+    pyautogui.press("down")
 
     pyautogui.sleep(0.1)
     pyautogui.hotkey("ctrl", "enter")
